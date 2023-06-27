@@ -1,0 +1,33 @@
+@media(min-width: 200px){
+    div{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body{
+        padding-top: 5vh;
+        background-color: var(--blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+       display: flex;
+       align-items: center;
+       column-gap: 4vh;
+    }
+    article,aside{
+        display: none;
+    }
+    h1{
+        font-size: 30px;
+        color: var(--grey);
+    }
+    summary{
+        font-size: 26px;
+        color: var(--green);
+    }
+
+}
