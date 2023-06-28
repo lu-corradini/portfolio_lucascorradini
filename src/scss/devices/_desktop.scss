@@ -1,11 +1,13 @@
 @media(min-width: 1000px) {
+    #app{
+        row-gap: 8vh;
+    }
+    
     nav{
-        justify-content: space-evenly;
         align-items: center;
-        column-gap: 10vh;
     }
 
-    article,aside{
+    nav article, nav aside{
         display: block;
     }
 
@@ -86,6 +88,22 @@
             background-color: var(--green);
             color: black;
             border: 2px solid black;
+        }
+    }
+    main {
+        > aside{
+            display: none;
+        }
+        > section{
+            > h1{
+                font-size: 50px;
+            }
+        }
+        > article{
+            > p{
+                width: 70%;
+                font-size: 24px;
+            }
         }
     }
 }

@@ -1,11 +1,13 @@
 @media(min-width: 200px){
-    div{
-        width: 95%;
+    #app{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        row-gap: 10vh;
     }
     body{
+        width: 100%;
         padding-top: 5vh;
         background-color: var(--blue);
         display: flex;
@@ -13,12 +15,30 @@
         align-items: center;
         justify-content: center;
     }
+    .simbol{
+        > a{
+            border: 2px solid var(--green);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 8vh;
+            width: 8vh;
+            transition: .3s;
+            color: var(--green);
+            font-weight: 700;
+            font-size: 26px;
+        }
+    }
     nav{
        display: flex;
        align-items: center;
-       column-gap: 4vh;
+       justify-content: center;
+       column-gap: 3vh;
+       width: 98%;
     }
-    article,aside{
+    nav article, nav aside{
         display: none;
     }
     h1{
@@ -28,6 +48,43 @@
     summary{
         font-size: 26px;
         color: var(--green);
+    }
+    main{
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+        > section{
+            > h1{
+                font-size: 42px;
+            }
+        }
+        > article{
+            > p{
+                font-size: 20px;
+                color: var(--grey);
+            }
+        }
+        > aside{
+            border: 2px solid var(--green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 8vh;
+            width: 25vh;
+            > a{
+                border: 2px solid var(--grey);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                height: 75%;
+                transition: .3s;
+                color: var(--green);
+                font-weight: 700;
+                font-size: 23px;
+            }
+        }
     }
 
 }

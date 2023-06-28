@@ -1,16 +1,17 @@
 <template>
-  <div>
     <NavMenu/>
-  </div>
+    <HomePageMain/>
 </template>
 
 <script>
 import NavMenu from './components/NavMenu.vue';
+import HomePageMain from './components/HomePageMain.vue';
 
 export default {
   name: 'App',
   components: {
-    NavMenu
+    NavMenu,
+    HomePageMain
   }
 }
 </script>
