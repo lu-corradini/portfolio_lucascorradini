@@ -36,8 +36,3 @@
         </section>
     </nav>
 </template>
-
-
-<style>
-
-</style>

@@ -43,4 +43,33 @@
             }
         }
     }
+    footer{
+        > article{
+            > h2{
+                font-size: 34px;
+            }
+        }
+    }
+    footer a{
+        font-size: 34px;
+    }
+    form{
+        > label{
+            font-size: 34px;
+        }
+        > p{
+            font-size: 28px;
+        }
+    }
+    input{
+        height: 7vh;
+        width: 25vh;
+    }
+    input[placeholder]{
+        font-size: 24px;
+    }
+    .button{
+        height: 7vh;
+        font-size: 24px;
+    }
 }

@@ -9,6 +9,7 @@
     body{
         width: 100%;
         padding-top: 5vh;
+        padding-bottom: 5vh;
         background-color: var(--blue);
         display: flex;
         flex-direction: column;
@@ -85,6 +86,72 @@
                 font-size: 23px;
             }
         }
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+        width: 92%;
+        > article{
+            > h2{
+                font-size: 26px;
+                color: var(--grey);
+            }
+        }
+        > section{
+            > ul{
+                display: flex;
+                width: 50%;
+                justify-content: center;
+                column-gap: 5vh;
+            }
+        }
+    }
+
+    footer a{
+        font-size: 26px;
+        color: var(--green);
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+        > label{
+            font-size: 24px;
+            color: var(--grey);
+            font-weight: 700;
+        }
+        > p{
+            font-size: 18px;
+            color: var(--grey);
+        }
+        > aside{
+            display: flex;
+            column-gap: 2vh;
+        }
+    }
+    input{
+        height: 5vh;
+        border: none;
+        background-color: var(--blue);
+    }
+    input[placeholder]{
+        padding-left: 2vh;
+        font-size: 16px;
+        color: whitesmoke;
+        border-bottom: 2px solid white;
+    }
+    .button{
+        width: 10vh;
+        color: white;
+        background-color: var(--blue);
+        border: none;
+        border-bottom: 2px solid var(--green);
+        font-size: 17px;
+        height: 5vh;
+        font-weight: 400;
     }
 
 }
