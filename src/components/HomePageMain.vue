@@ -14,3 +14,9 @@
             </aside>
        </main>
 </template>
+
+<script>
+    export default {
+        name: "HomePageMain"
+    }
+</script>

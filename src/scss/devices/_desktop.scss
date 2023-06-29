@@ -1,6 +1,6 @@
 @media(min-width: 1000px) {
     #app{
-        row-gap: 8vh;
+        row-gap: 6vh;
     }
     
     nav{
@@ -13,7 +13,7 @@
 
     .simbol{
         border: 1px solid var(--green);
-        > a{
+        > .lucas{
             border: 2px solid var(--green);
             height: 100%;
             width: 100%;
@@ -27,7 +27,7 @@
             font-weight: 700;
             font-size: 26px;
         }
-        >a:hover{
+        >.lucas:hover{
             background-color: var(--green);
             color: black;
             border: 2px solid black;
@@ -52,7 +52,7 @@
         height: 8vh;
         width: 23vh;
         transition: .3s;
-        > a{
+        > .links{
             font-size: 20px;
             color: var(--grey);
             font-weight: 700;
@@ -66,6 +66,7 @@
 
     .menu li:hover{
         border: 2px solid var(--grey);
+        cursor: pointer;
     }
 
     .menu > article{
@@ -95,6 +96,8 @@
             display: none;
         }
         > section{
+            display: flex;
+            column-gap: 2vh;
             > h1{
                 font-size: 50px;
             }
@@ -109,13 +112,13 @@
     footer{
         display: flex;
         flex-direction: row;
-        column-gap: 20vh;
         justify-content: space-between;
         width: 86%;
+        padding-top: 5vh;
         > article{
             display: flex;
             flex-direction: column;
-            row-gap: 1vh;
+            row-gap: 2vh;
             > h2{
                 font-size: 20px;
             }
@@ -145,7 +148,7 @@
         
     }
     form{
-        row-gap: 1vh;
+        row-gap: 2vh;
         >label{
             font-size: 20px;
         }
@@ -155,13 +158,15 @@
         }
     }
     input[placeholder]{
-        font-size: 18px;
+        font-size: 15px;
     }
     input{
         height: 4vh;
+        width: 30vh;
     }
     .button{
         height: 4vh;
+        width: 14vh;
         font-size: 18px;
         transition: .3s;
     }
@@ -169,5 +174,6 @@
         background-color: var(--green);
         cursor: pointer;
         color: black;
+        border-bottom: 2px solid black;
     }
 }

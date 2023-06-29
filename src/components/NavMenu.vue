@@ -1,9 +1,9 @@
 <template>
     <nav>
         <section class="simbol">
-            <a href="#">
-                 <i class="fa-regular fa-l"></i>
-            </a>
+            <router-link class="lucas" to="/homePage"> 
+                <i class="fa-regular fa-l"></i>
+            </router-link>
         </section>
         <h1>
             Web Developer
@@ -12,13 +12,14 @@
             <aside>
                 <ul>
                     <li>
-                        <a href="#"> <i class="fa-regular fa-address-card"></i> About</a>
+                        <!-- <a href="#" class="links"> About</a> -->
+                        <router-link class="links" to="/about"> <i class="fa-regular fa-address-card"></i> About</router-link>
                     </li>
                     <li>
-                        <a href="#"> <i class="fa-regular fa-address-book"></i> Contact</a>
+                        <a href="#" class="links"> <i class="fa-regular fa-address-book"></i> Contact</a>
                     </li>
                     <li>
-                        <a href="#"> <i class="fa-solid fa-laptop-file"></i> Projects</a>
+                        <a href="#" class="links"> <i class="fa-solid fa-laptop-file"></i> Projects</a>
                     </li>
                 </ul>
             </aside>
@@ -28,11 +29,23 @@
             <details>
                 <summary class="fa-solid fa-bars"></summary>
                 <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li>
+                        <a href="#" >About Me</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
                 </ul>
             </details>
         </section>
     </nav>
 </template>
+
+<script>
+    export default {
+        name: "NavMenu"
+    }
+</script>
