@@ -1,6 +1,6 @@
 @media(min-width: 1000px) {
     #app{
-        row-gap: 6vh;
+        row-gap: 3vh;
     }
     
     nav{
@@ -114,7 +114,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 86%;
-        padding-top: 5vh;
+        padding-top: 12vh;
         > article{
             display: flex;
             flex-direction: column;
@@ -175,5 +175,36 @@
         cursor: pointer;
         color: black;
         border-bottom: 2px solid black;
+    }
+    
+    img{
+        width: 45%;
+    }
+
+    .aboutMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first{
+        display: flex;
+        align-items: center;
+        column-gap: 8vh;
+        border: 1px solid white;
+        padding: 2vh;
+    }
+
+    .title{
+        font-size: 65px;
+        font-weight: 800;
+        padding-left: 2vh;
+    }
+
+    .left{
+        color: white;
+        width: 50%;
+        height: 100%;
     }
 }
