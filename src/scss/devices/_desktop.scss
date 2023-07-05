@@ -2,9 +2,15 @@
     #app{
         row-gap: 3vh;
     }
+
+    body{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
     
     nav{
         align-items: center;
+        padding-bottom: 3vh;
     }
 
     nav article, nav aside{
@@ -71,7 +77,7 @@
 
     .menu > article{
         border: 2px solid var(--green);
-        > a{
+        > .resume-link{
             border: 2px solid var(--green);
             height: 100%;
             width: 100%;
@@ -85,36 +91,46 @@
             font-weight: 700;
             font-size: 20px;
         }
-        > a:hover{
+        > .resume-link:hover{
             background-color: var(--green);
             color: black;
             border: 2px solid black;
         }
     }
-    main{
+
+
+    
+    .homeMain{
+        padding-top: 2vh;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        border-bottom-left-radius: 10px;
         > aside{
             display: none;
         }
         > section{
             display: flex;
             column-gap: 2vh;
+            padding-left: 2vh;
             > h1{
                 font-size: 50px;
             }
         }
         > article{
+            padding: 2vh;
             > p{
                 width: 70%;
                 font-size: 24px;
             }
         }
     }
+
     footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 86%;
-        padding-top: 12vh;
+        padding-top: 8vh;
         > article{
             display: flex;
             flex-direction: column;
@@ -143,10 +159,12 @@
             }
         }
     }
+
     footer a{
         font-size: 20px;
         
     }
+
     form{
         row-gap: 2vh;
         >label{
@@ -157,19 +175,23 @@
             width: 100%;
         }
     }
+    
     input[placeholder]{
         font-size: 15px;
     }
+
     input{
         height: 4vh;
         width: 30vh;
     }
+
     .button{
         height: 4vh;
         width: 14vh;
         font-size: 18px;
         transition: .3s;
     }
+
     .button:hover{
         background-color: var(--green);
         cursor: pointer;
@@ -179,6 +201,7 @@
     
     img{
         width: 45%;
+        border-radius: 10px;
     }
 
     .aboutMain{
@@ -189,10 +212,17 @@
     }
 
     .first{
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 2vh;
+    }
+
+    .first-1{
         display: flex;
         align-items: center;
         column-gap: 8vh;
-        border: 1px solid white;
+        border: 2px solid white;
+        border-radius: 10px;
         padding: 2vh;
     }
 
@@ -205,6 +235,184 @@
     .left{
         color: white;
         width: 50%;
-        height: 100%;
+    }
+
+    .resume{
+        border:1px solid  white;
+        border-radius: 10px;
+        width: 86%;
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+
+    .title-resume{
+        padding-left: 2vh;
+    }
+
+    .border-resume{
+        float: left;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .subtitle{
+        font-size: 24px;
+        color: var(--grey);
+        display: flex;
+        align-items: center;
+        column-gap: 4vh;
+        > p{
+            color: var(--green);
+        }
+    }
+
+    .subtitle > a,p{
+        color: var(--grey);
+        font-size: 18px;
+        border-bottom: 2px solid var(--blue);
+        
+    }
+
+    
+
+    .subtitle > a:hover{
+        border-bottom: 2px solid var(--grey);
+    }
+
+    .summary{
+        padding-left: 2vh;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+        > h3{
+            font-size: 24px;
+            color: var(--green);
+        }
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+        padding: 2vh;
+        > h3{
+            font-size: 24px;
+            color: var(--green);
+        }
+    }
+
+    .content{
+        display: flex;
+        column-gap: 20vh;
+    }
+
+    .left-skills, .right-skills{
+        display: flex;
+        > ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 1vh;
+            align-items: start;
+            font-size: 18px;
+            color: var(--grey);
+        }
+    }
+
+    strong{
+        color: var(--green);
+    }
+
+    .experience{
+        padding: 2vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        > .title-expe{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vh;
+            > h3{
+            font-size: 24px;
+            color: var(--green);
+            }
+        }
+        > .content-exp{
+            > ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 2vh;
+                align-items: start;
+                font-size: 18px;
+                color: var(--grey);
+                > li{
+                    border-left: 2px solid var(--green);
+                    border-right: 2px solid var(--blue);
+                    padding: 1vh;
+                    transition: .3s;
+                }
+                > li:hover{
+                    border-right: 2px solid var(--green);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .education{
+        padding-left: 2vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        > h3{
+            font-size: 24px;
+            color: var(--green);
+        }
+        > aside{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vh;
+            > strong{
+                font-size: 19px;
+            }
+        }
+    }
+
+    .languages{
+        padding-left: 2vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        > h3{
+            font-size: 24px;
+            color: var(--green);
+        }
+        > .english,.portuguese{
+            display: flex;
+            flex-direction: column;
+            row-gap: 2vh;
+            > strong{
+                font-size: 19px;
+            }
+            > article{
+                display: flex;
+                column-gap: 2vh;
+                > aside{
+                    background-color: var(--green);
+                    height: 1.5vh;
+                    width: 20vh;
+                }
+                >  .white{
+                    background-color: grey;
+                }
+            }
+        }
     }
 }

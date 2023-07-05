@@ -24,7 +24,7 @@
                 </ul>
             </aside>
             <article>
-                <a href="#">Resume</a>
+                <router-link to="/resume" class="resume-link"> Resume</router-link>
             </article>
             <details>
                 <summary class="fa-solid fa-bars"></summary>
