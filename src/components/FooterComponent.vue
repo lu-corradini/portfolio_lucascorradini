@@ -8,7 +8,7 @@
                 This is my portfolio, thank you for your visit, and I am looking forward to hear from you.
             </p>
         </article>
-        <!-- <section>
+        <section>
             <h2>My Social Medias</h2>   
             <ul>
                 <li>
@@ -21,14 +21,14 @@
                     <a href="https://www.instagram.com/corradini_l12/"> <i class="fa-brands fa-instagram"></i> </a>
                 </li>
             </ul>
-        </section> -->
-        <form action="#">
+        </section>
+        <!-- <form action="#">
             <label for="email">Contact Me</label>
             <p>Place your email here, an automatically message will be sent to your email</p>
             <aside>
                 <input type="email" name="email" id="email" placeholder="Your Email">
                 <button type="submit" class="button">Send</button>
             </aside>
-        </form>
+        </form> -->
     </footer>
 </template>

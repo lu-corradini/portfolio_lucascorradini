@@ -15,11 +15,11 @@
                         <!-- <a href="#" class="links"> About</a> -->
                         <router-link class="links" to="/about"> <i class="fa-regular fa-address-card"></i> About</router-link>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#" class="links"> <i class="fa-regular fa-address-book"></i> Contact</a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="#" class="links"> <i class="fa-solid fa-laptop-file"></i> Projects</a>
+                        <router-link class="links" to="/projects"> <i class="fa-solid fa-laptop-file"></i> Projects</router-link>
                     </li>
                 </ul>
             </aside>
